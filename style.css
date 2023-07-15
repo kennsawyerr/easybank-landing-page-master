@@ -1,0 +1,173 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Dark Blue: hsl(233, 26%, 24%)
+- Lime Green: hsl(136, 65%, 51%)
+- Bright Cyan: hsl(192, 70%, 51%)
+
+### Neutral
+
+- Grayish Blue: hsl(233, 8%, 62%)
+- Light Grayish Blue: hsl(220, 16%, 96%)
+- Very Light Gray: hsl(0, 0%, 98%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Font
+
+- Family: [Public Sans](https://fonts.google.com/specimen/Public+Sans)
+- Weights: 300, 400, 700 */
+
+
+:root{
+    
+
+/* ### Primary */
+
+--Dark-Blue: hsl(233, 26%, 24%);
+--Lime-Green: hsl(136, 65%, 51%);
+--Bright-Cyan: hsl(192, 70%, 51%);
+
+/* ### Neutral */
+
+--Grayish-Blue: hsl(233, 8%, 62%);
+--Light-Grayish-Blue: hsl(220, 16%, 96%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+-White: hsl(0, 0%, 100%);
+
+}
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+  body{
+    font-family: 'Public Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--Very-Light-Gray);
+  }
+
+  /* reset */
+
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  h1, h2, h3,h4, h5, h6{
+    margin: 0;
+    padding: 0;
+  }
+
+  p{
+    line-height: 1.6;
+    word-spacing: 1.5;
+  }
+
+
+  *, *::after, *::before{
+    box-sizing: border-box;
+  }
+
+  section{
+    padding: 60px 0;
+  }
+
+  /* utilities */
+
+  .flex{
+    display: flex;
+    align-items: center;
+  }
+
+
+  .grid{}
+
+  .container{
+    width: 80%;
+    max-width: 1440px;
+    margin: auto;
+  }
+  /* nav */
+  nav{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    justify-content: space-around;
+  }
+
+  .requestBtn{
+    width: 11rem;
+    padding: 15px 15px;
+    border-radius: 30px;
+    background-color: var(--Lime-Green);
+    color: var(--Very-Light-Gray);
+    border: 1px solid var(--Very-Light-Gray);
+  }
+
+  ul{
+    margin:0 auto;
+  }
+
+  nav li{
+    padding: 20px 20px;
+  }
+/* 
+  nav:nth-child(1){
+    margin-left: 120px;
+  } */
+
+
+  /* section 1 */
+
+ 
+
+
+
+  section h1{
+  font-size: 3rem;
+  font-weight: 300;
+  }
+
+  .section1{
+    background-image:url(images/bg-intro-desktop.svg);background-position-x: 300px;
+    background-position-y: -250px;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .textbox{
+    width: 30%;
+
+  }
+
+  /* section 2 */
+
+  .section2 li{
+    padding: 10px;
+  }
+
+  footer{
+    background-color: var(--Dark-Blue);
+    color: white;
+    padding: 50px;
+    margin: 0;
+  }
