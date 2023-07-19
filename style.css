@@ -1,42 +1,7 @@
-/* # Front-end Style Guide
 
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Dark Blue: hsl(233, 26%, 24%)
-- Lime Green: hsl(136, 65%, 51%)
-- Bright Cyan: hsl(192, 70%, 51%)
-
-### Neutral
-
-- Grayish Blue: hsl(233, 8%, 62%)
-- Light Grayish Blue: hsl(220, 16%, 96%)
-- Very Light Gray: hsl(0, 0%, 98%)
-- White: hsl(0, 0%, 100%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 18px
-
-### Font
-
-- Family: [Public Sans](https://fonts.google.com/specimen/Public+Sans)
-- Weights: 300, 400, 700 */
-
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
 
 :root{
-    
-
 /* ### Primary */
 
 --Dark-Blue: hsl(233, 26%, 24%);
@@ -53,7 +18,7 @@ The designs were created to the following widths:
 }
 
 
-  @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
 
   body{
     font-family: 'Public Sans', sans-serif;
@@ -64,6 +29,10 @@ The designs were created to the following widths:
 
   /* reset */
 
+
+  button {
+    outline: none;
+  }
   ul{
     list-style: none;
     margin: 0;
@@ -71,9 +40,10 @@ The designs were created to the following widths:
     
   }
 
-  h1, h2, h3,h4, h5, h6{
+  h1, h2, h3,h4, h5, h6 {
     margin: 0;
     padding: 0;
+
   }
 
   p{
@@ -98,28 +68,33 @@ The designs were created to the following widths:
   }
 
 
-  .grid{}
-
   .container{
     width: 80%;
     max-width: 1440px;
-    margin: auto;
+    margin: auto;  
   }
+
+
   /* nav */
   nav{
     padding: 0;
     margin: 0;
     background-color: white;
     justify-content: space-around;
+    color: var(--Grayish-Blue);
+    position: relative;
+    z-index: 99;
+    font-size: 15px;
   }
 
   .requestBtn{
     width: 11rem;
-    padding: 15px 15px;
+    padding: 13px 15px;
     border-radius: 30px;
-    background-color: var(--Lime-Green);
-    color: var(--Very-Light-Gray);
-    border: 1px solid var(--Very-Light-Gray);
+    background-image: linear-gradient(to left, var(--Lime-Green) 0%, var(--Bright-Cyan)100%);
+    color: white;
+    border: 1px solid transparent;
+    font-weight: 700;
   }
 
   ul{
@@ -127,47 +102,296 @@ The designs were created to the following widths:
   }
 
   nav li{
-    padding: 20px 20px;
+    padding: 30px 20px;
   }
-/* 
-  nav:nth-child(1){
-    margin-left: 120px;
-  } */
+
 
 
   /* section 1 */
 
- 
-
-
-
   section h1{
-  font-size: 3rem;
-  font-weight: 300;
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: var(--Dark-Blue);
   }
 
+  section p{
+    color: var(--Grayish-Blue);
+    font-size: 16px;
+  }
+  section h2{
+    font-weight: 300;
+    margin: 10px 0;
+    color: var(--Lime-Green);
+  }
   .section1{
-    background-image:url(images/bg-intro-desktop.svg);background-position-x: 300px;
+    background-image:url(images/bg-intro-desktop.svg);background-position-x: 600px;
     background-position-y: -250px;
     background-repeat: no-repeat;
-    width: 100vw;
     height: 100vh;
+    padding: 0;
+   
+    display: flex;
+  }
+
+  .mockups{
+   position: relative;
+   right: -17%;
+  }
+  .mockups_cont{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    overflow: hidden;
   }
 
   .textbox{
-    width: 30%;
-
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    margin-right: auto;
   }
+
+
+
+
+
+
+
+  
+
 
   /* section 2 */
 
   .section2 li{
-    padding: 10px;
+  
+    margin: 70px 0;
   }
 
+  .section2{
+    background-color: var(--Light-Grayish-Blue);
+  }
+
+
+
+  /* section 3 */
+
+  .section3  li{
+    background-color: white;
+    max-width: 20rem;
+    
+    padding:0;
+    margin: 0;
+  }
+
+  .section3 li img{
+    min-height: 50%;
+    max-height: 50%;
+  }
+  
+  .section3 img{
+    width: 100%;
+   border-radius: 5px 5px 0  0;
+    align-items: start;
+
+  }
+
+  .section3 h1, h6 {
+    margin-bottom: 20px;
+  }
+
+  .section3 p{
+    font-size: 14px;
+  }
+   .section3 h3 , h6{
+    font-weight: 500;
+   }
+  
+  .grid{
+    display: grid;
+   /* grid-template-rows: 360px 300px; */
+   grid-template-columns: 1fr 1fr 1fr  1fr ;
+   gap: 30px;
+  
+  }
+
+
+
+  /* footer */
   footer{
     background-color: var(--Dark-Blue);
     color: white;
     padding: 50px;
     margin: 0;
   }
+
+  .social{
+    width: 15rem;
+    margin-top: 3rem;
+  }
+
+  footer a{
+    color: white;
+  }
+
+
+  .margin{
+    margin-right: auto;
+  }
+  #footer_logo{
+   /* i don't know how to change the color of the svg */
+   color: white;
+  }
+
+
+  .hamburger{
+    display: none;
+  }
+
+
+  /* easy bank button 1
+    footer alignment 2
+
+    mobile design  tab 3
+    mobile design  4
+    portfolio section 5
+    portfolio toolbox 6
+    port images interval 7
+    port project page 8
+    remove projects btn 9
+    sneskers dropdown cart 10
+  */
+
+  
+
+
+  
+  @media screen  and (max-width:950px){
+ 
+    section{
+      padding: 15px 0;
+    }
+  
+    .section1{
+      background-image: url(images/bg-intro-mobile.svg);
+      
+    }
+  
+    nav ul{
+      visibility: hidden;
+      position: absolute;
+  
+    }
+  
+  
+     section .flex, footer .flex {
+      display: block;
+      
+    }
+
+    .grid{
+      display: grid;
+      
+   grid-template-columns: 1fr 1fr ;
+   gap: 30px;
+   height: fit-content;
+  
+    }
+  
+    .hamburger{
+      display: block;
+      margin-left: auto;
+      float: right;
+      padding: 15px 0;
+    }
+  
+    .hamburger:active{
+      
+    }
+  
+    nav .requestBtn{
+      visibility: hidden;
+      position: absolute;
+    }
+  
+    .grid{
+      margin: auto;
+    }
+      
+    .mockups{
+    visibility: hidden;
+    width: 10px;
+    right: 60px;
+    }
+  
+    .textbox{
+      width: 100%;
+    }
+    .mockups_cont{
+      top: 0;
+      width:14px;
+      visibility: hidden;
+    }
+    }
+
+
+    @media screen  and (max-width:600px){
+ 
+      section{
+        padding: 15px 0;
+      }
+    
+      .section1{
+        background-image: url(images/bg-intro-mobile.svg);
+        
+      }
+    
+      nav ul{
+        visibility: hidden;
+        position: absolute;
+    
+      }
+    
+    
+       section .flex, footer .flex ,.grid{
+        display: block;
+        
+      }
+    
+      .hamburger{
+        display: block;
+        margin-left: auto;
+        float: right;
+        padding: 15px 0;
+      }
+    
+      .hamburger:active{
+    
+      }
+    
+      nav .requestBtn{
+        visibility: hidden;
+        position: absolute;
+      }
+    
+      .grid{
+        margin: auto;
+      }
+        
+      .mockups{
+      visibility: hidden;
+      width: 10px;
+      right: 60px;
+      }
+    
+      .textbox{
+        width: 100%;
+      }
+      .mockups_cont{
+        top: 0;
+        width:14px;
+        visibility: hidden;
+      }
+      }
+    
