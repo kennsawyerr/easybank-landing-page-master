@@ -238,7 +238,6 @@
     color: white;
     padding: 50px;
     margin: 0;
-    
   }
 
   .social{
@@ -251,6 +250,9 @@
   }
 
 
+   footer ul{
+    display: block;
+   }
   .margin{
     margin-right: auto;
   }
@@ -265,8 +267,14 @@
   }
 
   footer .requestBtn{
-    margin-right: 0;
     float: right;
+  }
+
+  .footer{
+  
+    margin: 0;
+    padding: 0;
+    width: fit-content;
   }
 
 
