@@ -77,6 +77,7 @@
 
   /* nav */
   nav{
+    
     padding: 0;
     margin: 0;
     background-color: white;
@@ -85,6 +86,12 @@
     position: relative;
     z-index: 99;
     font-size: 15px;
+    
+  }
+
+  .nav{
+    display: flex;
+    align-items: center;
   }
 
   .requestBtn{
@@ -99,10 +106,17 @@
 
   ul{
     margin:0 auto;
+    height: fit-content;
+    display: flex;
+    padding: 0;
   }
 
   nav li{
     padding: 30px 20px;
+  }
+
+  nav li:hover{
+    background-color: black;
   }
 
 
@@ -250,18 +264,6 @@
   }
 
 
-  /* easy bank button 1
-    footer alignment 2
-
-    mobile design  tab 3
-    mobile design  4
-    portfolio section 5
-    portfolio toolbox 6
-    port images interval 7
-    port project page 8
-    remove projects btn 9
-    sneskers dropdown cart 10
-  */
 
   
 
@@ -271,6 +273,7 @@
  
     section{
       padding: 15px 0;
+      text-align: center;
     }
   
     .section1{
@@ -278,37 +281,63 @@
       
     }
   
-    nav ul{
-      visibility: hidden;
-      position: absolute;
-  
-    }
   
   
      section .flex, footer .flex {
       display: block;
-      
     }
 
+    .section3 ul{
+      margin: 0;
+      padding: 0;
+      display: auto;
+      justify-items: center;
+      width: 100%;
+    }
+
+    .section3 li{
+      justify-self: center;
+      width: 100%;
+      margin: auto;
+    }
+
+
     .grid{
-      display: grid;
-      
-   grid-template-columns: 1fr 1fr ;
-   gap: 30px;
-   height: fit-content;
+      display: grid;   grid-template-columns: 1fr 1fr ;
+      height: fit-content;
   
     }
   
     .hamburger{
       display: block;
       margin-left: auto;
-      float: right;
+      position: absolute;
       padding: 15px 0;
+      right: .75rem;
+      top: 3px;
     }
   
-    .hamburger:active{
-      
+    
+    nav .logo{
+      margin-left:20px;
+      margin: 15px 20px;
     }
+    #navBtn{
+      display: none;
+    }
+
+    #navBtn.active{
+      display: block;
+      width: 100%;
+    }
+
+    nav li{
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+    }
+
+
   
     nav .requestBtn{
       visibility: hidden;
@@ -320,7 +349,7 @@
     }
       
     .mockups{
-    visibility: hidden;
+    
     width: 10px;
     right: 60px;
     }
@@ -333,11 +362,44 @@
       width:14px;
       visibility: hidden;
     }
+
+    
+    .nav{
+      display: block;
+     }
+
+     nav .container{
+      width: 100%;
+     }
     }
 
 
     @media screen  and (max-width:600px){
- 
+       
+      
+     .nav{
+      display: block;
+     }
+
+     nav .container{
+      width: 100%;
+     }
+    #navBtn{
+      display: none;
+    }
+
+    #navBtn.active{
+      display: block;
+      
+    
+  
+    }
+
+    nav li{
+      width: 100%;
+    }
+
+
       section{
         padding: 15px 0;
       }
@@ -347,11 +409,7 @@
         
       }
     
-      nav ul{
-        visibility: hidden;
-        position: absolute;
-    
-      }
+      
     
     
        section .flex, footer .flex ,.grid{
