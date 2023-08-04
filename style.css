@@ -428,6 +428,14 @@
      nav .container{
       width: 100%;
      }
+
+     .focused nav{
+       filter: brightness(100%);
+     }
+
+     .focused  section{
+       filter: brightness(40%);
+     }
     }
 
 
