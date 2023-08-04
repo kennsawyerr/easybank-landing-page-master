@@ -429,18 +429,17 @@
       width: 100%;
      }
 
-     .focused nav{
-       filter: brightness(100%);
-     }
-
-     .focused  section{
-       filter: brightness(40%);
-     }
+     .focused{
+      filter: brightness(0.5);
+          }
     }
 
 
     @media screen  and (max-width:600px){
        
+     .focused{
+      filter: brightness(0.5);
+          }
       .mockups {
         position: unset;
         top: -120px;
@@ -480,7 +479,7 @@
     }
 
     nav ul{
-      box-shadow: 2px 2px 200px 100px rgb(19, 16, 16);
+      /* box-shadow: 2px 2px 200px 100px rgb(19, 16, 16); */
       padding: 20px 0;
     }
 
